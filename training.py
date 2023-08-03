@@ -67,7 +67,7 @@ class Game:
         print(diagonal)
 
     def check_board(self):
-        pass:
+        pass
 
 def user_input():
     num = input('Enter a number: ')
