@@ -60,11 +60,11 @@ class Game:
 
     def check_move(self):
         new_list = [1,2,3,4,5,6,7,8,9]
-        kas_trecias = new_list[2::3-1][:-1]
+        diagonal = new_list[2::3-1][:-1]
         for i in range(3):
-            eilutes = new_list[i*3:(i+1)*3]
-            print(eilutes)
-        print(kas_trecias)
+            each_line = new_list[i*3:(i+1)*3]
+            print(each_line)
+        print(diagonal)
 
     def check_board(self):
         pass:
@@ -72,14 +72,7 @@ class Game:
 def user_input():
     num = input('Enter a number: ')
 
-
-
-def check_move():
-    print('TODO move check')
-
 def main():
-
-
     new_board = UltimateBoard()
     print(new_board)
     
