@@ -1,10 +1,10 @@
 
 
 class Board:
-    """ Class for little boar 3 x 3 
+    """ Class for little board as array of 9 elements
     """
     def __init__(self):
-        self.size = 3
+        self.size = 9
         self.board = []
         filler = 0
 
@@ -107,6 +107,9 @@ def main():
                 new_board.board_list[board_numb].board[place_numb] = -1
             else :
                 print("Not valid Player")
+                
+            if new_board.board_list[board_numb].check_win():
+                new_board.board_list[board_numb].winner = game.player
                 
             game.player = 1 if game.player == 2 else 2
             print(new_board)
